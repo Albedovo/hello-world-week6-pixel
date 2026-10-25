@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 24px;
+  background: #15171c;
+  color: #eeeeef;
+  font-family: system-ui, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; }
+h1 { font-size: 28px; font-weight: 500; }
+p { color: #bdc0ca; line-height: 1.6; }
+canvas { display: block; max-width: 100%; height: auto !important; }
+#controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 24px; }
+.control label { display: block; margin-bottom: 8px; }
+input[type="range"] { width: 100%; margin: 0; accent-color: #b8a4ed; }
+select { padding: 8px; width: 100%; font: inherit; }
+@media (max-width: 480px) {
+  body { padding: 16px; }
+  #controls { grid-template-columns: 1fr; }
+}
